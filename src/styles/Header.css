@@ -1,0 +1,117 @@
+.header-container{
+    height: 10vh;
+    background-color: rgb(21, 17, 17);
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    z-index: 99;
+    top: 0 !important;
+}
+
+.logo-container{
+    margin-left: 9%;
+    height: 100%;
+    display: flex;
+    width: 20%;
+    cursor: pointer;
+    align-items: center;
+    >h2{
+        margin-left: 4%;
+        color: white;
+        font-weight: bold;
+        font-family: "Prompt", system-ui;
+    }
+}
+
+.search-container{
+    width: 20%;
+    margin-left: 6%;
+    display: flex;
+    align-items: center;
+    >form{
+        display: flex;
+        align-items: center;
+        width: 90%;
+        height: 36%;
+        >input{
+            width: 100%;
+            height: 100%;
+        }
+        >i{
+            cursor: pointer;
+        }
+    }
+}
+
+.menu-container{
+    margin-left: 4%;
+    height: 100%;
+    width: 35%;
+    color: white;
+}
+
+.menu{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.menu ul{
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.menu ul li a{
+    transition: color 0.4s ease;
+}
+.menu ul li{
+    cursor: pointer;
+    list-style-type: none;
+    a i{
+        transition: all 0.3s ease;
+    }    
+}
+.menu ul li:hover{
+    >a{
+        color:rgb(207, 10, 10);
+    }
+}
+
+
+#search-icon{
+    margin-left: -20px;
+}
+#header-logo{
+    height: 90%;
+    border-radius: 50%;
+    margin-left: 3%;
+}
+
+/*MARK: drop-down
+ */
+
+.movie-types{
+    position: relative;
+    >div{
+        width: 90px;
+        overflow: scroll;
+        position: absolute;
+        transition: all 0.3s ease;
+        left: 80%;
+        top: 110%;
+        height: 10vh;
+        >p{
+            display: flex;align-items: center;justify-content: center;
+            background-color: rgb(84, 84, 84);
+            width: 100%;
+            height: 40px;
+            font-size: 0.9rem;
+            border-bottom:1px solid black;
+        }
+        >p:hover{
+            color: white;
+            background-color: rgb(52, 51, 51);
+        }
+    }
+}

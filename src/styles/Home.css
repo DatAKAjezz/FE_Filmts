@@ -1,0 +1,145 @@
+.home-container{
+    width: 70%;
+}
+
+.main-content{
+    margin-top: 5rem;
+    width: 100% !important;
+    display: flex;  
+}
+
+.phim-container{
+
+    background-color: rgb(15, 20, 22);
+    padding-block: 2%;
+    border-radius: 6px;
+    width: 90%;
+    margin-left: 10%;
+    /* margin-top: 2%; */
+}
+.home-movie-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/* MARK: head container */
+
+.head-of-container{
+    background-color: black;
+    margin-left: 1%;
+    width: 98%;
+    height: fit-content;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    >p:nth-child(1){
+        padding-block: 0.8%;
+        padding-inline: 1%;
+        min-width: 15%;
+        max-width: 40%;
+        width: fit-content;
+        background-color:rgb(207, 10, 10);
+        color: black;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        text-align: center;
+    }
+    >p:nth-child(2){
+        display: flex;
+        align-items: center;
+        color: white;
+        margin-right: 1rem;
+        transition: all 0.2s ease;
+        cursor: pointer;
+    }
+    >p:nth-child(2):hover{
+        color:rgb(207, 10, 10);
+    }
+}
+/*MARK: new movie
+ */
+
+.new-movie-stage {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.new-movie-card {
+    width: 90% !important;
+    height: 110px !important;
+    background-size: cover;
+}
+
+.card-name-wrapper2{
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    background-color: black;
+    >p:nth-child(1){
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 0.8rem;
+        color: yellow;
+    }
+    >p:nth-child(2){
+        color: white;
+        font-size: 0.5rem;
+    }
+}
+
+/*MARK: carousel
+ */
+
+.new-movie-stage{
+    background-color: rgb(15, 20, 22);
+    margin-top: 2.2%;
+    margin-left: 10%;
+    width: 90%;
+    justify-content: space-between;
+    padding-block: 1%;
+    border-radius: 6px;
+    margin-bottom: 2%;
+}
+
+.new-movie-container{
+    margin-top: 2%;
+    width: 97%;
+    height: fit-content;
+    padding-bottom: 2% !important;
+    display: flex;
+    position: relative;
+    /* overflow-y: visible !important; */
+    
+    .swiper-pagination{
+        transform: translateY(10px); 
+    }
+    
+    .swiper-pagination-bullet {
+        background: white;
+        width: 0.3rem;
+        height:0.3rem;
+        border-radius: .5rem;
+        opacity: 1;
+    }
+    
+    .swiper-pagination-bullet-active {
+      background-color: rgb(0, 255, 145);
+      width: 1.5rem;
+      transition: all 0.4s ease;
+    }
+}
+
+.new-movie-card-wrapper{
+    width: 25% !important;
+}
+
+.new-movie-card:hover {
+    transform: scale(1.05);
+}
+ 

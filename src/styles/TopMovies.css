@@ -1,0 +1,81 @@
+.top-movies{
+    flex: 1;
+    margin-top: 1.5%;
+    margin-inline: 1%;
+    color: white;
+    background-color: rgb(15, 20, 22);
+    padding-block: 1%;
+    border-radius: 6px;
+    /* height: fit-content; */
+}
+
+.top-movie-card{
+    height: 100px;
+    width: 78%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 3%;
+    background-color: black;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    >img{
+        width: 49%;
+        height: 100%;
+    }
+    >div{
+        width: 46%;
+        margin-right: 2%;
+        display: flex;
+        flex-direction: column;
+        padding-block: 3%;
+        >p:nth-child(1){
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        p{
+            font-size: 0.8rem;
+        }
+        >div{
+            width: 100%;
+            display: flex;
+            >p{
+                margin-left: 5%;
+            }
+        }
+    }
+}
+.top-movie-card:hover{
+    color: rgb(71, 140, 225);
+}
+.top-movie-head{
+    width: 86%;
+    margin-left: 2%;
+    ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        >li{
+            text-align: center;
+            cursor: pointer;
+            list-style-type: none;
+            width: 32%;
+        }
+        >li:nth-child(1){
+            display: flex;
+            align-items: center;justify-content: center;
+        }
+    }
+}
+#fire-icon{
+    color: orange;  
+}
+
+
+.top-movie-skeleton{
+    margin-left: 11%;
+    margin-top: 2%;
+}
